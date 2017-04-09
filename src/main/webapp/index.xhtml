@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<h:outputStylesheet name="estilo.css" library="css" />
+	<h:outputStylesheet library="bootstrap" name="bootstrap.css" />
+	<title>Loja Virtual</title>
+</h:head>
+<h:body styleClass="body">
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Loja Virtual
+			
+				<h:graphicImage library="imagem" name="loja.png"
+					title="ir para produtos" />
+			</h1>
+		</div>
+		<h:form>
+			
+			<div align="center">
+				<h:commandLink action="lista_produto">
+					<h:graphicImage library="imagem" name="codigobarra.png" title="Ir para produtos" />
+				</h:commandLink>
+			</div>
+			<div align="center">
+				<h:commandLink action="lista_pessoas" >
+					<h:graphicImage library="imagem" name="pessoas.png" title="Ir para pessoas" />
+				</h:commandLink>
+			</div>
+			<div align="center">
+				<h:commandLink action="lista_formapagamento" >
+					<h:graphicImage library="imagem" name="dinhero.png" title="Ir para Formas de Pagamento" />
+				</h:commandLink>
+			</div>
+		</h:form>
+	</div>
+</h:body>
+
+</html>

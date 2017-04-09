@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.body{
+	width: auto;
+	height: auto;
+	/*acima, direita, abaixo, esquerda*/
+	margin: 40px auto 40px auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	/*margem interna*/
+	padding: 10px;
+}
+.textos{
+	margin: 20px 40px auto 40px;
+	color: #808080;	
+	text-align: center;
+}
+
