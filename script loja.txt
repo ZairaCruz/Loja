@@ -1,0 +1,38 @@
+create table produto(
+	id	serial not null primary key,
+	nome varchar(60),
+	preco float
+);
+create table pessoa(
+	id	serial primary key,
+	nome	varchar(60),
+	cpf	char(14),
+	rg	varchar(20),
+	data_nasc	date,
+	rua	varchar(60),
+	bairro	varchar(30),
+	cidade	varchar(30),
+	uf	char(2),
+	cep	integer,
+	email	varchar(40),
+	senha	varchar(32),
+	tipo varchar(30)
+);
+
+create table fone(
+	fon_id	serial	primary key,
+	id	integer,
+	numero	varchar(20),
+	descricao	varchar(30),
+	constraint rel_pessoa_fone foreign key (id) references pessoa (id) 
+);
+
+create table formaPagamento(
+	id serial primary key,
+	descricao varchar(20),
+	numMaxParc integer,
+	numPadraoParc integer,
+	intervaloDias integer,
+	percentualacres float
+);
+	
