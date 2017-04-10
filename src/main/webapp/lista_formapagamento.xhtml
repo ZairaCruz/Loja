@@ -28,7 +28,7 @@
 				<p:dataExporter type="dinheiro" target="tbl" fileName="f" />
 			</h:commandLink>
 		</div>
-
+		<p:separator />
 		<p:dataTable id="tbl" var="f" value="#{formaPagamentoCtrl.listagem}"
 			paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink}
 		{PageLinks} {NextPageLink} {LastPageLink}"
@@ -64,7 +64,7 @@
 		<p:dialog header="Cadastro de Forma de Pagamento" widgetVar="cadDialog" modal="true" showEffect="fade" 
 		hideEffect="fade" resizable="false" closeListener="#{formaPagamentoCtrl.handleClose}">
 			<p:outputPanel id="cadDetail" style="text=align:center;">
-				<h:panelGrid columns="2" style="text-align: left">
+				<h:panelGrid columns="2" cellpadding="10">
 					<h:outputLabel value="Código"/>
 					<h:inputText value="#{formaPagamentoCtrl.formaPagamento.id}" size="6" maxlength="10" readonly="true"/>
 					<h:outputLabel value="Nome"/>
