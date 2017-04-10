@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<h:outputStylesheet name="estilo.css" library="css" />
+	<h:outputStylesheet library="bootstrap" name="bootstrap.css" />
+	<title>Loja Virtual</title>
+</h:head>
+<h:body>
+	<h:form>
+		<p:panel header="Loja Virtual" style="margin:20px 0px">
+			<div align="center">
+				<h:graphicImage library="imagem" name="loja.png"
+					title="Loja Virtual" />
+			</div>
+			<p:accordionPanel>
+				<p:tab title="Pessoas">
+					<div align="center">
+						<h:commandLink action="lista_pessoas">
+							<h:graphicImage library="imagem" name="pessoas.png"
+								title="Ir para pessoas" />
+						</h:commandLink>
+					</div>
+				</p:tab>
+				<p:tab title="Produtos">
+					<div align="center">
+						<h:commandLink action="lista_produto">
+							<h:graphicImage library="imagem" name="codigobarra.png"
+								title="Ir para produtos" />
+						</h:commandLink>
+					</div>
+				</p:tab>
+				<p:tab title="Forma de Pagamento">
+					<div align="center">
+						<h:commandLink action="prime">
+							<h:graphicImage library="imagem" name="money.png"
+								title="Ir para Formas de Pagamento" />
+						</h:commandLink>
+					</div>
+				</p:tab>
+			</p:accordionPanel>
+		</p:panel>
+	</h:form>
+</h:body>
+
+</html>
