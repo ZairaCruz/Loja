@@ -27,7 +27,7 @@ create table pessoa(
   bairro  varchar(30),
   cid_id  integer,
   est_id  integer,
-  cep	  integer,
+  cep	  varchar(8),
   email	  varchar(60),
   senha	  varchar(32),
   tipo 	  varchar(30),
